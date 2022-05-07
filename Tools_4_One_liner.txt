@@ -1,0 +1,43 @@
+Httprobe
+-> go get -u github.com/tomnomnom/httprobe
+-> cp /home/kali/go/bin/httprobe /usr/local/go/bin/
+-> cp /home/kali/go/bin/httprobe /usr/local/bin
+
+
+GF-pattern
+-> go get -u github.com/tomnomnom/gf
+-> cp /home/kali/go/bin/gf /usr/local/go/bin/
+-> cp /home/kali/go/bin/gf /usr/local/bin
+-> git clone https://github.com/tomnomnom/gf
+-> git clone https://github.com/1ndianl33t/Gf-Patterns
+-> create a folder in root directory
+mkdir .gf
+-> cd /home/kali/one/gf/examples
+cp * /root/.gf
+-> cd /home/kali/one/Gf-Patterns
+cp * /root/.gf
+
+
+Waybackurls
+-> go install github.com/tomnomnom/waybackurls
+-> cp /home/kali/go/bin/waybackurls /usr/local/go/bin/
+-> cp /home/kali/go/bin/waybackurls /usr/local/bin
+
+QSReplace
+-> go get -u github.com/tomnomnom/qsreplace
+-> cp /home/kali/go/bin/qsreplace /usr/local/go/bin/
+-> cp /home/kali/go/bin/qsreplace /usr/local/bin
+
+
+GAU
+-> GO111MODULE=on go get -u -v github.com/lc/gau
+-> cp /home/kali/go/bin/gau /usr/local/go/bin/
+-> cp /home/kali/go/bin/gau /usr/local/bin
+
+
+findomain
+-> git clone https://github.com/Edu4rdSHL/findomain.git
+-> cd findomain
+-> cargo build -release
+-> sudo cp -r /home/kali/one/findomain /usr/bin
+-> findomain
