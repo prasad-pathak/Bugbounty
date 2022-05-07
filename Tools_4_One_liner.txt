@@ -69,3 +69,10 @@ alias findomain='./findomain/target/release/findomain'
 ------------------------------------------------------
 -> sudo cp /home/kali/bugbounty/findomain/target/release/findomain /usr/bin
 -> findomain -t target.com
+
+
+
+anew 
+-> go get -v github.com/tomnomnom/anew 
+-> sudo cp /home/kali/go/bin/anew /usr/local/bin/
+-> sudo cp /home/kali/go/bin/anew /usr/local/go/bin/
