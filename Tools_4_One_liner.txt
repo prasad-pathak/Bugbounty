@@ -38,6 +38,6 @@ GAU
 findomain
 -> git clone https://github.com/Edu4rdSHL/findomain.git
 -> cd findomain
--> cargo build -release
+-> cargo build --release
 -> sudo cp -r /home/kali/one/findomain /usr/bin
 -> findomain
