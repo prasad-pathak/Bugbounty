@@ -41,3 +41,31 @@ findomain
 -> cargo build --release
 -> sudo cp -r /home/kali/one/findomain /usr/bin
 -> findomain
+
+
+------------------------
+https://medium.com/@tucuong97/subdomains-enumeration-find-list-subdomain-with-findomain-service-60794b7855d2
+or 
+Install
+Clone repo
+-> git clone https://github.com/Edu4rdSHL/findomain.git
+-> cd findomain && curl https://sh.rustup.rs -sSf | sh
+choose 1 Config curent shell
+-> source $HOME/.cargo/env
+Build
+-> cargo build --release
+Run Findomain
+
+-> ./target/release/findomain
+
+sudo gedit .bashrc 
+type as showing in image or medium 
+-------------------------------below lines------------
+# some more ls aliases
+alias ll='ls -l'
+alias findomain='./findomain/target/release/findomain'
+#alias la='ls -A'
+#alias l='ls -CF'
+------------------------------------------------------
+-> sudo cp /home/kali/bugbounty/findomain/target/release/findomain /usr/bin
+-> findomain -t target.com
