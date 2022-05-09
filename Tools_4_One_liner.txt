@@ -41,6 +41,31 @@ findomain
 -> cargo build --release
 -> sudo cp -r /home/kali/one/findomain /usr/bin
 -> findomain
+-----------------------------------------------------------
+Usage 
+Make a simple search of subdomains and print the info in the screen:
+-> findomain -t example.com
+
+Make a simple search of subdomains using all the APIs and print the info in the screen:
+-> findomain -t example.com -a
+
+Make a search of subdomains and export the data to a CSV file:
+-> findomain -t example.com -o csv
+
+Make a search of subdomains using all the APIs and export the data to a CSV file:
+-> findomain -t example.com -a -o csv
+
+Make a search of subdomains and resolve the IP address of subdomains (if possible):
+-> findomain -t example.com -i
+
+Make a search of subdomains with all the APIs and resolve the IP address of subdomains (if possible):
+-> findomain -t example.com -i -a
+
+Make a search of subdomains with all the APIs and resolve the IP address of subdomains (if possible), exporting the data to a CSV file:
+-> findomain -t example.com -i -a -o csv
+
+Make a search of subdomains using a proxy (http://127.0.0.1:8080 in it case, the rest of aguments continue working in the same way, you just need to add the -p flag to the before commands):
+-> findomain -t example.com -p http://127.0.0.1:8080
 
 
 ------------------------
