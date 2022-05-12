@@ -101,3 +101,14 @@ anew
 -> go get -v github.com/tomnomnom/anew 
 -> sudo cp /home/kali/go/bin/anew /usr/local/bin/
 -> sudo cp /home/kali/go/bin/anew /usr/local/go/bin/
+
+
+
+-------------------------------------------------------------------------------------
+
+DALFOX 
+
+INSTALL 
+-> GO111MODULE=on go get github.com/hahwul/dalfox/v2
+-> cp /home/kali/go/bin/dalfox /usr/local/go/bin/
+-> cp /home/kali/go/bin/dalfox /usr/local/bin
