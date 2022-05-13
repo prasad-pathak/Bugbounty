@@ -11,9 +11,18 @@ now bypass root detection (new tab) - by the start the app and minimize
 
 -> frida --codeshare dzonerzy/fridantiroot PACKAGE_NAME -U --no-pause 
 
+->> %resume
+
 start the objection (new tab)
 
 -> objection --gadget PACKAGENAME explore 
+
+// will start the objection cli 
+
+-> android intent launch_activity ACTIVITYNAME
+ 
+// WILL START THE ACTIVITY AND BYPASS ROOT DETECTION BYPASS 
+
 
 
 
