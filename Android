@@ -23,6 +23,22 @@ start the objection (new tab)
  
 // WILL START THE ACTIVITY AND BYPASS ROOT DETECTION BYPASS 
 
+open every in new terminal 
+
+-> adb shell 
+
+-> cd /data/local
+
+-> ./frida-server-14.2.12-android-x86
+start the application
+
+-> frida --codeshare dzonerzy/fridantiroot com.packagename -U --no-pause 
+
+resmume
+-> objection --gadget PACKAGENAME explore 
+
+->> android intent launch_activity activityname 
+
 
 
 
