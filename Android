@@ -1,0 +1,23 @@
+Pentesting android app
+
+
+Root Detection bypass 
+
+start the frida server 
+connect adb devies and data/local
+./frida-server 
+
+now bypass root detection (new tab)
+
+-> frida --codeshare dzonerzy/fridantiroot PACKAGE_NAME -U --no-pause 
+
+start the objection (new tab)
+
+-> objection --gadget PACKAGENAME explore 
+
+
+
+
+
+
+
