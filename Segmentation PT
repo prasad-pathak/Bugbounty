@@ -6,7 +6,16 @@ steps
 (which must be specified by client/)
 
 
-3 - 
+3 - PCI SCOPE - to NON PCI ip need to find 
+
+host and port ned to check up 
+
+
+10.10.51.0/24 non pci to 10.10.18.0/24
+
+
+google search and subnet calculator
+
 
 
 
