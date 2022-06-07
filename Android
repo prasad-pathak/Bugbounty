@@ -83,7 +83,20 @@ connect the android device with mobexler and setup adb
 2 - install ADB in windows 
 3 - https://dl.google.com/android/repository/platform-tools-latest-windows.zip 
 4 - extract and set the path in edit environment variable in path D:\kanhaiya\PROJECT\10 worldline\files_android_lab\platform-tools
-5 - 
+5 - add the path in the systemvariable. 
+6 - launch the cmd and type --- adb 
+7 - 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
