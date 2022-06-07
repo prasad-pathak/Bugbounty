@@ -74,7 +74,9 @@ frida -U -f com.twitter.android -l D:\frida\fridascript.js --no-paus
 9 - app will stop working you have to relauch app without clearing cache
 
 ----------------------------------------------------------------------------------------------------
+https://mobexler.com/checklist.htm#android
 
+-------------------------------------------------------------------------------------------------
 connect the android device with mobexler and setup adb 
 
 1 - goto settings - aboutphone - buildnumber - turn on usb debugging 
