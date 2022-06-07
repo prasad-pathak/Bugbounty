@@ -58,9 +58,15 @@ Unrestricted backup file - ALLOWED BACKUP = TRUE
 
 ----------------------------------------------------------------------------------------------------------
 
+ssl unpinning - android app via mobexler
 
+1 - Download the fridaserver - as per the mobexler version - https://github.com/frida/frida/releases/download/14.2.12/frida-server-14.2.12-android-x86_64.xz
+                                                             https://github.com/frida/frida/releases/download/14.2.12/frida-server-14.2.12-android-x86.xz
+2 - adb push frida-server-14.2.12-x86_64 /data/local/
+3 - adb shell 
+4 - chmod +x frida-server-14.2.12-x86_64    or chmod 777 frida-server-14.2.12-x86_64   or refer this article 
+https://infosecwriteups.com/hail-frida-the-universal-ssl-pinning-bypass-for-android-e9e1d733d29
 
-
-
+5 - 
 
 
