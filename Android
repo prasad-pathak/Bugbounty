@@ -85,7 +85,15 @@ connect the android device with mobexler and setup adb
 4 - extract and set the path in edit environment variable in path D:\kanhaiya\PROJECT\10 worldline\files_android_lab\platform-tools
 5 - add the path in the systemvariable. 
 6 - launch the cmd and type --- adb 
-7 - 
+7 - adb devices 
+8 - adb connect 192.168.0.1:5555 (genymotion device ip \ default port)
+9 - adb shell 
+10 - adb push /mnt/sdcard/download  --- push filedevices 
+11 - adb pull /mnt/sdcard/filename.cs
+12 - adb start-server
+13 - adb kill-server
+
+
 
 
 
