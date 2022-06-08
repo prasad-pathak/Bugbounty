@@ -93,6 +93,81 @@ connect the android device with mobexler and setup adb
 12 - adb start-server
 13 - adb kill-server
 
+-----------------------------------------------------------------------------------------------
+
+Drozer - for dynamic analysis for android application 
+
+1 - start the drozer 
+
+--> adb forward tcp:31415 tcp:31415
+    adb shell am startservice -n com.mwr.dz/.service.ServerService -c com.mwr.dz.START.EMBEDDED
+    drozer console connect 
+
+or to run globally cp this file to bin directory 
+
+
+--> save this file as .sh extention eg: drozer-start.sh 
+
+--> cp drozer-start.sh /bin
+
+
+2 - before starting drozer install the drozer apk in android emulator or android device 
+
+visit this link - download android apk - https://labs.f-secure.com/tools/drozer/
+
+3 - Start drozer (Manually)- Install Drozer Agent APK in Genymotion and ON server- Launch Terminal - "adb forward tcp:31415 tcp:31415"- "drozer console connect" 
+
+4 - Usage 
+
+To get a list of all the installed apps - "run app.package.list"
+
+To find the attack surface - "run app.package.attacksurface [pkg-name]"
+
+To understand what this module does - “help module-name”
+
+To gather for activity information - “run app.activity.info -a package-name”
+
+To run activity component - “run app.activity.start –component package-name activity-name”
+
+Finding the content providers - "run.app.provider.finduri [pkg-name]" or scanner
+
+Querying the content provider- "run app.provider.query [content-uri]" 
+
+Find the vulnerable content provider -"run scanner.provider.finduris -a [pkg-name]"
+
+Query the content provider- “run app.provider.query content://uri” 
+
+Scan the provider for injection vulnerability - “run scanner.provider.injection -a package-name”
+
+Issue the query to sql injection to check tables  - “run app.provider.query content://url –projection --projection "* FROM SQLITE_MASTER WHERE type='table';--" ”
+
+Extract the data from tables - run app.provider.query content://uri --projection "* FROM note--"
+
+Reading files via content provider -"run app.provider.read [content-uri]/../../[file-name]"
+
+
+--------------------------------------------------------------------------------------------
+
+5 - Androguard 
+Reverse Engineering and Malware Analysis framework
+Open Source 
+Really handy for analyzing application
+https://github.com/androguard/androguard
+https://resources.infosecinstitute.com/topic/android-penetration-tools-walkthrough-series-androguard/
+
+Load up Androguard - Androlyze, Androsim, Androsign, etc.
+Get all the activities, permissions and services 
+How to find classes and methods? 
+What about source code?
+
+
+androlyze -s 
+myapp = APK(‘path/of/apk’)
+myapp.get_activities()
+myapp.get_permission()
+myapp.get_providers()
+
+press the tab after variable created myapp. + tab only in mobexler 
 
 
 
