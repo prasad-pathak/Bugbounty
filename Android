@@ -92,6 +92,8 @@ connect the android device with mobexler and setup adb
 11 - adb pull /mnt/sdcard/filename.cs
 12 - adb start-server
 13 - adb kill-server
+14 - adb devices 
+15 - adb -s emulator-5554 install APK_Name.apk    --> this will allow to install the apk via adb in android device
 
 -----------------------------------------------------------------------------------------------
 
@@ -220,6 +222,8 @@ myapp.zip
 myapp.zipmodule
 
 
+
+--------------------------------------------------------------------------
 
 
 
