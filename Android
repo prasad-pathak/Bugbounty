@@ -169,6 +169,55 @@ myapp.get_providers()
 
 press the tab after variable created myapp. + tab only in mobexler 
 
+myapp.androidversion
+myapp.arsc
+myapp.axml
+myapp.filename
+myapp.files
+myapp.files_crc32
+myapp.format_value
+myapp.get_AndroidManifest
+myapp.get_activities
+myapp.get_android_manifest_axml
+myapp.get_android_manifest_xml
+myapp.get_android_resources
+myapp.get_androidversion_code
+myapp.get_androidversion_name
+myapp.get_certificate
+myapp.get_details_permissions
+myapp.get_dex
+myapp.get_element
+myapp.get_elements
+myapp.get_files
+myapp.get_filename
+myapp.get_file
+myapp.get_files_crc32
+myapp.get_files_information
+myapp.get_files_types
+myapp.get_intent_filters
+myapp.get_libraries
+myapp.get_main_activity
+myapp.get_max_sdk_version
+myapp.get_min_sdk_version
+myapp.get_package
+myapp.get_permissions
+myapp.get_providers
+myapp.get_raw
+myapp.get_receivers
+myapp.get_services
+myapp.get_signature
+myapp.get_signature_name
+myapp.get_target_sdk_version
+myapp.is_valid_apk
+myapp.magic_file
+myapp.new_zip
+myapp.package
+myapp.permissions
+myapp.show
+myapp.valid_apk
+myapp.xml
+myapp.zip
+myapp.zipmodule
 
 
 
