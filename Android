@@ -29,7 +29,8 @@ open every in new terminal
 
 -> cd /data/local
 
--> ./frida-server-14.2.12-android-x86
+-> ./frida-server-14.2.12-android-x86 
+-> ./frida-server-14.2.12-android-x86 &    ---/ run frida in background
 start the application
 
 -> frida --codeshare dzonerzy/fridantiroot com.packagename -U --no-pause 
