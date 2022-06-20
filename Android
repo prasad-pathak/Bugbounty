@@ -57,6 +57,10 @@ Unrestricted backup file - ALLOWED BACKUP = TRUE
 12 - select * from table_name \\ list the userdata in plain text 
 13 - 
 
+
+----------------------------------------------------------------------------------------------------------
+https://www.youtube.com/watch?v=vwrFoMoB9nE 
+Multiple ways to #bypass #Android #SSL #PINNING | #frida #objection #apkmitm - BONUS TUTORIAL
 ----------------------------------------------------------------------------------------------------------
 
 ssl unpinning - android app via mobexler
