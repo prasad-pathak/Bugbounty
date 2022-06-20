@@ -230,7 +230,11 @@ myapp.zipmodule
 
 --------------------------------------------------------------------------
 
+Start the intent activity with adb 
 
+adb shell am start -n package.name/activityname
+
+--------------------------------------------------------------------------
 
 
 
