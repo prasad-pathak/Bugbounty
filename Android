@@ -234,7 +234,37 @@ Start the intent activity with adb
 
 adb shell am start -n package.name/activityname
 
+
+---------------------------------------------------------------------------
+
+Resource 
+
+
+https://stackoverflow.com/questions/13380590/is-it-possible-to-start-activity-through-adb-shell
+
+https://oldbam.github.io/android/security/android-vulnerabilities-insecurebank-activities
+
+https://reconshell.com/mobile-hacking-cheat-sheet/
+
 --------------------------------------------------------------------------
+
+static anaylysis with portals 
+
+https://appsweep.guardsquare.com/
+
+https://lab.bitbaan.com/
+
+https://beta.pithus.org/
+
+https://www.immuniweb.com/mobile/
+
+--------------------------------------------------------------------------
+
+Dynamic analysis testing 
+
+https://mobexler.com/checklist.htm#android
+
+https://book.hacktricks.xyz/mobile-pentesting/android-app-pentesting/drozer-tutorial/exploiting-content-providers
 
 
 
