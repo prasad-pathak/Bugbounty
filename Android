@@ -37,7 +37,7 @@ Open 2 tabs
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
-*Unrestricted backup file - ALLOWED BACKUP = TRUE *
+*Unrestricted backup file - (ALLOWED BACKUP = TRUE) *
 
 1) In androidmanifest.xml check for allowbackup = true if found the same carry on with the below mentioned commands
 2) adb backup -f filename.ab com.android (package name)
@@ -51,6 +51,24 @@ Open 2 tabs
 7) sqlite3 UserDB.db 
    - .tables
    - select * from table_name \\ list the userdata in plain text 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Multiple ways to bypass Android SSL-PINNING | #frida #objection #apkmitm - BONUS TUTORIAL
+- https://www.youtube.com/watch?v=vwrFoMoB9nE 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+*SSL Unpinning Bypass*
+Do the steps mentioned earlier to 
+1) frida -U -f <your_application_package_name> -l <path_to_fridascript.js_on_your_computer> --no-paus
+   - frida -U -f com.twitter.android -l D:\frida\fridascript.js --no-paus
+2) - frida -U -l sslpinning.js -f com.package.name --no-pause
+3) - app will stop working you have to relauch app without clearing cache
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
