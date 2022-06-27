@@ -1,5 +1,58 @@
 Pentesting android app
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+*First step to connect adb to your mobile device(Gennymotion).*
+1) adb kill-server
+2) adb start-server
+3) adb devices
+4) adb connect mobile_device_ip:5555
+5) adb shell
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+*After connecting adb shell we have to paste frida server into the /data/local or /data/local/tmp*
+1) Download frida server from below mentioned link.
+   https://github.com/frida/frida/releases/download/14.2.12/frida-server-14.2.12-android-x86.xz   
+2) unzip frida-server-14.2.12-android-x86.xz
+3) use below mentioned command for pasting frida-server-14.2.12-android-x86.xz into mobile device
+   adb push frida-server-14.2.12-android-x86.xz /data/local
+4) Check whether frida server is properly working
+   - adb shell
+   - cd /data/local
+   - chmod +x frida-server-14.2.12-android-x86
+   - ./frida-server-14.2.12-android-x86
+5) Open a new tab using ctrl+shft+T
+   frida-ps -Uai
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Root Detection Bypass*
+Open 2 tabs 
+1) frida --codeshare dzonerzy/fridantiroot Package_name -U --no-pause
+   - %resume      (Enter this command only after running objection's 1st command of listing activities)
+2) Objection --gadget Package_name explore
+   - android hooking list activities        (Provides activity names whichever are mentioned in Mobile application)
+   - android intent launch_activity activity_name  (Hold don't press enter before running %resume through frida's request from 1st tab
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Unrestricted backup file - ALLOWED BACKUP = TRUE *
+
+1) In androidmanifest.xml check for allowbackup = true if found the same carry on with the below mentioned commands
+2) adb backup -f filename.ab com.android (package name)
+3) abe.jar Download from below mentioned URL
+   github.com/nelenkov/android-backup-extractor - clone it this will convert in tar 
+   https://sourceforge.net/projects/android-backup-processor/files/latest/download or download from here
+   https://sourceforge.net/projects/android-backup-processor/files/ 
+4) java -jar /home/kali/Downloads/android-backup-extractor-20210530-bin/abe.jar unpack /home/kali/Desktop/filename.ab /home/kali/Desktop/filename.tar 1234
+5) unzip the tar file 
+6) cd ~/home/kali/Desktop/apps/package_name/db/   --/ db locate
+7) sqlite3 UserDB.db 
+   - .tables
+   - select * from table_name \\ list the userdata in plain text 
+
+
 
 Root Detection bypass 
 
