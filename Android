@@ -29,8 +29,9 @@ Pentesting android app
 
 *Root Detection Bypass*
 Open 2 tabs 
-1) frida --codeshare dzonerzy/fridantiroot Package_name -U --no-pause
+1) frida --codeshare dzonerzy/fridantiroot -f Package_name -U --no-pause
    - %resume      (Enter this command only after running objection's 1st command of listing activities)
+   - use -l if you have you have frida antiroot file saved.
 2) Objection --gadget Package_name explore
    - android hooking list activities        (Provides activity names whichever are mentioned in Mobile application)
    - android intent launch_activity activity_name  (Hold don't press enter before running %resume through frida's request from 1st tab
